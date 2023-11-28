@@ -5,6 +5,10 @@
 <style lang="scss">
 body {
   margin: 0px;
+  background: #d9e6f7;
+}
+p {
+  margin: 0px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
