@@ -1,37 +1,21 @@
 <template>
-  <div class="home">
+  <div class="grid justify-items-center">
     <navbar-component />
-    <div class="info-container">
-      <user-options-component />
-      <profile-infos-component />
-      <friends-component />
+    <div class="max-w-screen-xl mt-10">
+      <div class="mt-20">
+        <div class="grid grid-cols-12 gap-x-4 gap-y-4">
+          <first-column-component />
+          <second-column-component />
+          <third-column-component />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import NavbarComponent from "@/components/navbar-component.vue";
-import UserOptionsComponent from "@/components/user-options-component.vue";
-import ProfileInfosComponent from "@/components/profile-infos-component.vue";
-import FriendsComponent from "@/components/friends-component.vue";
+import NavbarComponent from "@/components/navbar/navbar-container.component.vue";
+import FirstColumnComponent from "@/components/home/first-column.component.vue";
+import SecondColumnComponent from "@/components/home/second-column.component.vue";
+import ThirdColumnComponent from "@/components/home/third-column.component.vue";
 </script>
-
-<style scoped lang="scss">
-.home {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-.info-container {
-  margin-top: 100px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-@media (min-width: 1500px) {
-  .info-container {
-    max-width: 1500px;
-  }
-}
-</style>
