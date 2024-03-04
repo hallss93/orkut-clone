@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <div class="mb-8">
+    <router-view />
+  </div>
 </template>
 
 <style lang="scss">

@@ -1,7 +1,9 @@
 <template>
-  <div class="col-span-3 grid gap-y-4">
-    <friends-container-component />
-    <communities-container-component />
+  <div class="col-span-3">
+    <div class="grid gap-y-4">
+      <friends-container-component />
+      <communities-container-component />
+    </div>
   </div>
 </template>
 
