@@ -14,14 +14,60 @@
         <h6 class="text-md font-normal text-gray-500">masculino, solteiro</h6>
         <h6 class="text-md font-normal text-gray-500">Brasil</h6>
       </li>
-      <li class="w-full px-4 py-2 rounded-b-lg">Adicionar</li>
-      <li class="w-full px-4 py-2 border-b border-gray-200">Denunciar</li>
-      <li class="w-full px-4 py-2 rounded-b-lg">Perfil</li>
-      <li class="w-full px-4 py-2 rounded-b-lg">Recados (3)</li>
-      <li class="w-full px-4 py-2 rounded-b-lg">Galeria (40)</li>
-      <li class="w-full px-4 py-2 rounded-b-lg">Depoimentos (39)</li>
-      <li class="w-full px-4 py-2 rounded-b-lg">Recados</li>
-      <li class="w-full px-4 py-2 rounded-b-lg">Aplicativos (2)</li>
+      <li
+        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
+      >
+        <FontAwesomeIcon :icon="faUserPlus" class="me-4" />
+        Adicionar
+      </li>
+      <li
+        class="w-full px-4 ps-12 py-4 border-b border-gray-200 rounded-b-lg flex items-center cursor-pointer"
+      >
+        <FontAwesomeIcon :icon="faBan" class="me-4" />
+        Denunciar
+      </li>
+      <li
+        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
+      >
+        <FontAwesomeIcon :icon="faUser" class="me-4" />
+        Perfil
+      </li>
+      <li
+        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
+      >
+        <FontAwesomeIcon :icon="faEnvelope" class="me-4" />
+        Recados (3)
+      </li>
+      <li
+        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
+      >
+        <FontAwesomeIcon :icon="faImages" class="me-4" />
+        Galeria (40)
+      </li>
+      <li
+        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
+      >
+        <FontAwesomeIcon :icon="faMessage" class="me-4" />
+        Depoimentos (39)
+      </li>
+      <li
+        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
+      >
+        <FontAwesomeIcon :icon="faGamepad" class="me-4" />
+        Aplicativos (2)
+      </li>
     </ul>
   </div>
 </template>
+<script lang="ts" setup>
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {
+  faUserPlus,
+  faBan,
+  faUser,
+  faEnvelope,
+  faImages,
+  faMessage,
+  faGamepad,
+} from "@fortawesome/free-solid-svg-icons";
+</script>
