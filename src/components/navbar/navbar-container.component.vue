@@ -9,7 +9,7 @@
         href="https://orkut.com/"
         class="flex items-center space-x-3 rtl:space-x-reverse"
       >
-        <img src="@/assets/logo.png" alt="Orkut" class="h-8" />
+        <img src="@/assets/logo.svg" alt="Orkut" class="h-8" />
       </a>
       <navbar-profile-menu-component />
       <div

@@ -1,5 +1,5 @@
 <template>
-  <div class="grid justify-items-center">
+  <div class="grid justify-items-center mb-8">
     <navbar-component />
     <div class="max-w-screen-xl mt-10">
       <div class="mt-20">
