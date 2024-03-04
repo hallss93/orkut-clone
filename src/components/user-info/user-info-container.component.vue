@@ -3,10 +3,12 @@
     <breadcrumbs />
     <user-info-bio />
     <user-classifiers-container-component />
+    <user-informations-container-component />
   </div>
 </template>
 <script lang="ts" setup>
 import Breadcrumbs from "@/components/breadcrumbs/breadcrumb-container.component.vue";
 import UserInfoBio from "@/components/user-info/user-info-bio.component.vue";
 import UserClassifiersContainerComponent from "@/components/user-info/user-classifiers/user-classifiers-container.component.vue";
+import UserInformationsContainerComponent from "@/components/user-info/user-informations/user-informations-container.component.vue";
 </script>
