@@ -13,11 +13,11 @@
       </a>
       <navbar-profile-menu-component />
       <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+        class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
         id="navbar-sticky"
       >
         <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          class="flex flex-col p-4 lg:p-0 mt-4 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0"
         >
           <li v-for="(m, index) in menu" :key="index" class="flex items-center">
             <a
@@ -27,7 +27,7 @@
                 'text-pink-500': m.active,
                 'text-gray-900': !m.active,
               }"
-              class="block py-2 px-3 rounded md:p-0"
+              class="block py-2 px-3 rounded lg:p-0"
               aria-current="page"
               >{{ m.name }}</a
             >

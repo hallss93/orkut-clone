@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-3">
+  <div class="col-span-3 hidden lg:block">
     <user-profile-container-component />
   </div>
 </template>

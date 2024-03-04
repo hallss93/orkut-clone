@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mt-4">
+  <div class="flex mt-4 flex-wrap">
     <user-classifier-item-component />
   </div>
 </template>
