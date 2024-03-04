@@ -14,45 +14,33 @@
         <h6 class="text-md font-normal text-gray-500">masculino, solteiro</h6>
         <h6 class="text-md font-normal text-gray-500">Brasil</h6>
       </li>
-      <li
-        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
-      >
+      <li class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer">
         <FontAwesomeIcon :icon="faUserPlus" class="me-4" />
         Adicionar
       </li>
       <li
-        class="w-full px-4 ps-12 py-4 border-b border-gray-200 rounded-b-lg flex items-center cursor-pointer"
+        class="w-full px-4 ps-12 py-4 border-b border-gray-200 flex items-center cursor-pointer"
       >
         <FontAwesomeIcon :icon="faBan" class="me-4" />
         Denunciar
       </li>
-      <li
-        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
-      >
+      <li class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer">
         <FontAwesomeIcon :icon="faUser" class="me-4" />
         Perfil
       </li>
-      <li
-        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
-      >
+      <li class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer">
         <FontAwesomeIcon :icon="faEnvelope" class="me-4" />
         Recados (3)
       </li>
-      <li
-        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
-      >
+      <li class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer">
         <FontAwesomeIcon :icon="faImages" class="me-4" />
         Galeria (40)
       </li>
-      <li
-        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
-      >
+      <li class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer">
         <FontAwesomeIcon :icon="faMessage" class="me-4" />
         Depoimentos (39)
       </li>
-      <li
-        class="w-full px-4 ps-12 py-4 rounded-b-lg flex items-center cursor-pointer"
-      >
+      <li class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer">
         <FontAwesomeIcon :icon="faGamepad" class="me-4" />
         Aplicativos (2)
       </li>
