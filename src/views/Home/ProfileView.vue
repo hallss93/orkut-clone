@@ -21,7 +21,7 @@
     </second-column-component>
 
     <third-column-component>
-      <friends-container-component title="Amigos" :total="50" />
+      <friends-container-component title="Amigos" :total="50" avatar />
       <communities-container-component />
     </third-column-component>
   </div>

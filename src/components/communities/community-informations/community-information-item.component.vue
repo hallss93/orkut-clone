@@ -1,8 +1,8 @@
 <template>
-  <div class="max-w-screen-xl mt-4">
+  <div class="max-w-screen-xl">
     <ul class="text-sm font-medium text-gray-500 bg-white striped">
       <li
-        class="w-full px-4 py-5"
+        class="w-full px-2 py-5"
         v-for="(item, index) in options"
         :key="index"
       >
@@ -31,7 +31,6 @@ import { format } from "date-fns";
 import { pt } from "date-fns/locale";
 
 const options = [
-  { label: "", value: "" },
   {
     label: "descrição:",
     value: "Para todos aqueles que acham que o dia só começa após o meio-dia.",

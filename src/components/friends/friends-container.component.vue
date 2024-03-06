@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="grid grid-cols-3 gap-x-8 gap-y-4">
-      <friend-item-component v-for="i in 9" :key="i" />
+      <friend-item-component v-for="i in 9" :key="i" :avatar="avatar" />
     </div>
   </div>
 </template>
@@ -28,6 +28,7 @@ import { defineProps } from "vue";
 defineProps({
   title: { type: String, required: true },
   total: { type: Number, required: true },
+  avatar: { type: Boolean, required: false, default: false },
 });
 
 import FriendItemComponent from "./friend-item.component.vue";
