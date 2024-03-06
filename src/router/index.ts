@@ -24,6 +24,14 @@ const routes: Array<RouteRecordRaw> = [
             /* webpackChunkName: "community" */ "../views/Home/CommunityView.vue"
           ),
       },
+      {
+        path: "/gallery",
+        name: "gallery",
+        component: () =>
+          import(
+            /* webpackChunkName: "gallery" */ "../views/Home/GalleryView.vue"
+          ),
+      },
     ],
   },
   {

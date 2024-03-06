@@ -31,7 +31,10 @@
         <FontAwesomeIcon :icon="faEnvelope" class="me-4" />
         Recados (3)
       </li>
-      <li class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer">
+      <li
+        class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer"
+        @click="router.push('/gallery')"
+      >
         <FontAwesomeIcon :icon="faImages" class="me-4" />
         Galeria (40)
       </li>
@@ -57,4 +60,5 @@ import {
   faMessage,
   faGamepad,
 } from "@fortawesome/free-solid-svg-icons";
+import router from "@/router";
 </script>
