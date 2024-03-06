@@ -3,12 +3,12 @@ import HomeView from "../views/HomeView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
+    path: "/home",
     name: "home",
     component: HomeView,
   },
   {
-    path: "/login",
+    path: "/",
     name: "login",
     component: () =>
       import(/* webpackChunkName: "login" */ "../views/LoginView.vue"),
