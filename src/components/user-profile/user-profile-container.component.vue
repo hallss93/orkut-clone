@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-sm p-6 bg-white border border-gray-200 rounded-large shadow"
+    class="max-w-sm p-6 bg-white border border-gray-200 rounded-large shadow text-center"
   >
     <img
       class="inline-block h-40 w-40 rounded-full ring-2 ring-white"
