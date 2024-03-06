@@ -3,13 +3,13 @@
     <div class="flex">
       <div class="grow h-14">
         <h6 class="text-sm font-bold text-gray-500 text-left">
-          Depoimentos (39)
+          Novos depoimentos (3)
         </h6>
       </div>
     </div>
 
     <ul role="list" class="divide-y divide-gray-200">
-      <li class="flex justify-between gap-x-6 py-5" v-for="i in 5" :key="i">
+      <li class="flex justify-between gap-x-6 py-5" v-for="i in 2" :key="i">
         <div class="flex min-w-0 gap-x-4">
           <img
             class="h-12 w-12 flex-none rounded-full bg-gray-50"
@@ -26,6 +26,20 @@
               arcu lobortis nisl adipiscing fusce posuere nunc.
             </p>
           </div>
+        </div>
+        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+          <button
+            type="button"
+            class="w-full text-black bg-blue-100 hover:bg-blue-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+          >
+            Aceitar
+          </button>
+          <button
+            type="button"
+            class="w-full text-black bg-red-100 hover:bg-red-200 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+          >
+            Recusar
+          </button>
         </div>
       </li>
     </ul>

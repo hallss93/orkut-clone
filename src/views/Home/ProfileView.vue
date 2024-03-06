@@ -13,6 +13,9 @@
         <upcoming-birthdays-container-component />
       </div>
       <div class="col-span-12">
+        <user-new-deposition-container-component />
+      </div>
+      <div class="col-span-12">
         <user-depositions-container-component />
       </div>
     </second-column-component>
@@ -34,6 +37,7 @@ import UserProfileContainerComponent from "@/components/user-profile/user-profil
 import UserInfoContainerComponent from "@/components/user-info/user-info-container.component.vue";
 import UpcomingBirthdaysContainerComponent from "@/components/upcoming-birthdays/upcoming-birthdays-container.component.vue";
 import UserDepositionsContainerComponent from "@/components/user-info/user-depositions-container.component.vue";
+import UserNewDepositionContainerComponent from "@/components/user-info/user-new-deposition-container.component.vue";
 
 import FriendsContainerComponent from "@/components/friends/friends-container.component.vue";
 import CommunitiesContainerComponent from "@/components/communities/communities-container.component.vue";
