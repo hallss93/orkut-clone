@@ -1,13 +1,7 @@
 <template>
   <div class="col-span-3">
     <div class="grid gap-y-4">
-      <friends-container-component />
-      <communities-container-component />
+      <slot />
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import FriendsContainerComponent from "@/components/friends/friends-container.component.vue";
-import CommunitiesContainerComponent from "@/components/communities/communities-container.component.vue";
-</script>

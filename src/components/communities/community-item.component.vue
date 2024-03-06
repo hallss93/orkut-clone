@@ -10,7 +10,9 @@
 </template>
 
 <script lang="ts" setup>
+import router from "@/router";
+
 function open_friend(): void {
-  console.log("action to open");
+  router.push("/community");
 }
 </script>
