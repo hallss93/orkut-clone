@@ -90,7 +90,9 @@
     <div class="col-span-12 bg-white p-4 flex items-center justify-center">
       <div class="text-center">
         <p class="text-gray-500 mb-1">Ainda não é membro?</p>
-        <a href="#" class="font-bold text-blue-500 underline">ENTRAR JÁ</a>
+        <a href="#" class="font-bold text-blue-500 underline uppercase"
+          >Entrar Já</a
+        >
       </div>
     </div>
   </div>
