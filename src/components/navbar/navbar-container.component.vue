@@ -5,12 +5,13 @@
     <div
       class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
     >
-      <a
-        href="https://orkut.com/"
+      <router-link
+        href="#"
+        :to="{ path: '/' }"
         class="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img src="@/assets/logo.svg" alt="Orkut" class="h-8" />
-      </a>
+      </router-link>
       <navbar-profile-menu-component />
       <div
         class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
@@ -21,11 +22,10 @@
         >
           <li v-for="(m, index) in menu" :key="index" class="flex items-center">
             <a
-              href="#"
-              @click="open_item(m.key)"
+              @click="open_item(m)"
               :class="{
                 'text-pink-500': m.active,
-                'text-gray-900': !m.active,
+                'text-gray-900 cursor-pointer': !m.active,
               }"
               class="block py-2 px-3 rounded lg:p-0"
               aria-current="page"
@@ -78,17 +78,25 @@
 <script lang="ts" setup>
 import { reactive } from "vue";
 import NavbarProfileMenuComponent from "@/components/navbar/navbar-profile-menu.component.vue";
+import router from "@/router";
 
 const menu = reactive([
-  { key: "inicio", name: "Início", active: true },
-  { key: "perfil", name: "Perfil", active: false },
-  { key: "recados", name: "Recados", active: false },
-  { key: "amigos", name: "Amigos", active: false },
-  { key: "comunidades", name: "Comunidades", active: false },
-  { key: "aplicativos", name: "Aplicativos", active: false },
+  { key: "inicio", name: "Início", active: true, link: "/" },
+  { key: "perfil", name: "Perfil", active: false, link: "/profile" },
+  { key: "recados", name: "Recados", active: false, link: "/scraps" },
+  { key: "amigos", name: "Amigos", active: false, link: "/friends" },
+  {
+    key: "comunidades",
+    name: "Comunidades",
+    active: false,
+    link: "/communities",
+  },
+  { key: "aplicativos", name: "Aplicativos", active: false, link: "/" },
 ]);
 
-function open_item(key: string): void {
-  alert(key);
+function open_item(item: any): void {
+  if (!item.active) {
+    router.push(item.link);
+  }
 }
 </script>
