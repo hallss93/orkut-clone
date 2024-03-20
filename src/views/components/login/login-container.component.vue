@@ -3,9 +3,9 @@
     <div class="w-9/12">
       <div class="grid grid-cols-12 gap-4 items-center h-screen">
         <div
-          class="col-start-2 lg:col-start-2 col-span-12 lg:col-span-10 xl:col-start-2 lg:col-span-8 h-3/6"
+          class="col-start-2 lg:col-start-2 col-span-12 lg:col-span-10 xl:col-start-2 lg:col-span-8 md:h-3/6"
         >
-          <div class="grid grid-cols-12 h-full">
+          <div class="grid grid-cols-12">
             <login-into-component />
             <login-form-component />
           </div>

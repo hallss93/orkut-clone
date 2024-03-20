@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import FirstColumnComponent from "@/components/home/first-column.component.vue";
-import UserProfileContainerComponent from "@/components/user-profile/user-profile-container.component.vue";
-import GalleryContainerComponent from "@/components/gallery/gallery-container.component.vue";
+import FirstColumnComponent from "@/views/components/home/first-column.component.vue";
+import UserProfileContainerComponent from "@/views/components/user-profile/user-profile-container.component.vue";
+import GalleryContainerComponent from "@/views/components/gallery/gallery-container.component.vue";
 </script>

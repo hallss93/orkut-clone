@@ -92,8 +92,8 @@
   </div>
 </template>
 <script lang="ts" setup>
-import Breadcrumbs from "@/components/breadcrumbs/breadcrumb-container.component.vue";
-import UserInfoBio from "@/components/user-info/user-info-bio.component.vue";
-import UserClassifiersContainerComponent from "@/components/user-info/user-classifiers/user-classifiers-container.component.vue";
-import UserInformationsContainerComponent from "@/components/user-info/user-informations/user-informations-container.component.vue";
+import Breadcrumbs from "@/views/components/breadcrumbs/breadcrumb-container.component.vue";
+import UserInfoBio from "@/views/components/user-info/user-info-bio.component.vue";
+import UserClassifiersContainerComponent from "@/views/components/user-info/user-classifiers/user-classifiers-container.component.vue";
+import UserInformationsContainerComponent from "@/views/components/user-info/user-informations/user-informations-container.component.vue";
 </script>

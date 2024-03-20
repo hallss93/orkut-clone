@@ -4,12 +4,12 @@
       class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
     >
       <li class="inline-flex items-center">
-        <a
-          href="#"
+        <router-link
+          :to="'/home'"
           class="inline-flex items-center text-sm font-medium text-gray-700"
         >
           Início
-        </a>
+        </router-link>
       </li>
       <li>
         <div class="flex items-center">

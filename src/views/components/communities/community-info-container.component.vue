@@ -6,6 +6,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-import Breadcrumbs from "@/components/breadcrumbs/breadcrumb-container.component.vue";
-import CommunityInformationsContainerComponent from "@/components/communities/community-informations/community-informations-container.component.vue";
+import Breadcrumbs from "@/views/components/breadcrumbs/breadcrumb-container.component.vue";
+import CommunityInformationsContainerComponent from "@/views/components/communities/community-informations/community-informations-container.component.vue";
 </script>

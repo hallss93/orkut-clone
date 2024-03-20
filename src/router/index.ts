@@ -6,14 +6,16 @@ const routes: Array<RouteRecordRaw> = [
     redirect: "/profile",
     name: "home",
     component: () =>
-      import(/* webpackChunkName: "home" */ "../views/Home/HomeView.vue"),
+      import(
+        /* webpackChunkName: "home" */ "../views/templates/Home/HomeView.vue"
+      ),
     children: [
       {
         path: "/profile",
         name: "profile",
         component: () =>
           import(
-            /* webpackChunkName: "profile" */ "../views/Home/ProfileView.vue"
+            /* webpackChunkName: "profile" */ "../views/pages/ProfileView.vue"
           ),
       },
       {
@@ -21,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
         name: "community",
         component: () =>
           import(
-            /* webpackChunkName: "community" */ "../views/Home/CommunityView.vue"
+            /* webpackChunkName: "community" */ "../views/pages/CommunityView.vue"
           ),
       },
       {
@@ -29,7 +31,7 @@ const routes: Array<RouteRecordRaw> = [
         name: "gallery",
         component: () =>
           import(
-            /* webpackChunkName: "gallery" */ "../views/Home/GalleryView.vue"
+            /* webpackChunkName: "gallery" */ "../views/pages/GalleryView.vue"
           ),
       },
     ],
@@ -38,7 +40,9 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "login",
     component: () =>
-      import(/* webpackChunkName: "login" */ "../views/LoginView.vue"),
+      import(
+        /* webpackChunkName: "login" */ "../views/templates/Login/LoginView.vue"
+      ),
   },
 ];
 

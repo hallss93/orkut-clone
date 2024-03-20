@@ -4,5 +4,5 @@
   </div>
 </template>
 <script lang="ts" setup>
-import UserInformationItemComponent from "@/components/user-info/user-informations/user-information-item.component.vue";
+import UserInformationItemComponent from "@/views/components/user-info/user-informations/user-information-item.component.vue";
 </script>

@@ -30,5 +30,5 @@
 </template>
 
 <script lang="ts" setup>
-import UserProfilePhotoComponent from "@/components/user-profile/user-profile-photo.component.vue";
+import UserProfilePhotoComponent from "@/views/components/user-profile/user-profile-photo.component.vue";
 </script>

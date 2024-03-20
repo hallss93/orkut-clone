@@ -76,22 +76,47 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive } from "vue";
-import NavbarProfileMenuComponent from "@/components/navbar/navbar-profile-menu.component.vue";
+import { computed, reactive } from "vue";
+import NavbarProfileMenuComponent from "@/views/components/navbar/navbar-profile-menu.component.vue";
 import router from "@/router";
 
-const menu = reactive([
-  { key: "inicio", name: "Início", active: true, link: "/" },
-  { key: "perfil", name: "Perfil", active: false, link: "/profile" },
-  { key: "recados", name: "Recados", active: false, link: "/scraps" },
-  { key: "amigos", name: "Amigos", active: false, link: "/friends" },
+const menu = computed(() => [
+  {
+    key: "inicio",
+    name: "Início",
+    active: router.currentRoute.value.name === "home",
+    link: "/home",
+  },
+  {
+    key: "perfil",
+    name: "Perfil",
+    active: router.currentRoute.value.name === "profile",
+    link: "/profile",
+  },
+  {
+    key: "recados",
+    name: "Recados",
+    active: router.currentRoute.value.name === "scraps",
+    link: "/scraps",
+  },
+  {
+    key: "amigos",
+    name: "Amigos",
+    active: router.currentRoute.value.name === "friends",
+    link: "/friends",
+  },
   {
     key: "comunidades",
     name: "Comunidades",
-    active: false,
+    active: router.currentRoute.value.name === "communities",
     link: "/communities",
   },
-  { key: "aplicativos", name: "Aplicativos", active: false, link: "/" },
+  {
+    key: "aplicativos",
+    name: "Aplicativos",
+    active: router.currentRoute.value.name === "apps",
+    link: "/apps",
+  },
 ]);
 
 function open_item(item: any): void {
