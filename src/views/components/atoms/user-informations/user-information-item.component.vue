@@ -32,44 +32,46 @@
         <span class="text-gray-500">música</span>
       </div>
       <div class="col-span-8 sm:col-span-9 text-left flex flex-wrap">
-        <div
-          class="py-1 px-4 bg-white border border-pink-400 rounded-large text-gray-700 me-3 mb-3"
+        <tag-item-component
           v-for="(item, index) in musics"
           :key="index"
+          :title="item"
         >
           {{ item }}
-        </div>
+        </tag-item-component>
       </div>
 
       <div class="col-span-4 sm:col-span-3 text-left">
         <span class="text-gray-500">filmes</span>
       </div>
       <div class="col-span-8 sm:col-span-9 text-left flex flex-wrap">
-        <span
-          class="py-1 px-4 bg-white border border-pink-400 rounded-large text-gray-700 me-3 mb-3"
+        <tag-item-component
           v-for="(item, index) in films"
           :key="index"
+          :title="item"
         >
           {{ item }}
-        </span>
+        </tag-item-component>
       </div>
 
       <div class="col-span-4 sm:col-span-3 text-left">
         <span class="text-gray-500">livros</span>
       </div>
       <div class="col-span-8 sm:col-span-9 text-left flex flex-wrap">
-        <span
-          class="py-1 px-4 bg-white border border-pink-400 rounded-large text-gray-700 me-3 mb-3"
+        <tag-item-component
           v-for="(item, index) in books"
           :key="index"
+          :title="item"
         >
           {{ item }}
-        </span>
+        </tag-item-component>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+import tagItemComponent from "@/views/components/atoms/tag-item.component.vue";
+
 const musics = [
   "Mr. Kitty",
   "Molchat Doma",
