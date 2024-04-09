@@ -17,8 +17,9 @@
   </div>
 </template>
 <script lang="ts" setup>
-import upcomingBirthdaysItemComponent from "./upcoming-birthdays-item.component.vue";
-import { IOption } from "../upcoming-birthdays/upcoming-birthdays-item.component.vue";
+import UpcomingBirthdaysItemComponent, {
+  IOption,
+} from "@/views/components/molecules/upcoming-birthdays/upcoming-birthdays-item.component.vue";
 
 const array: IOption[] = new Array(12).fill({
   title: "Olivia Joestar",

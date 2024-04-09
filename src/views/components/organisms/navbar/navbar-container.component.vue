@@ -76,8 +76,8 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, reactive } from "vue";
-import NavbarProfileMenuComponent from "@/views/components/navbar/navbar-profile-menu.component.vue";
+import { computed } from "vue";
+import NavbarProfileMenuComponent from "@/views/components/molecules/navbar/navbar-profile-menu.component.vue";
 import router from "@/router";
 
 const menu = computed(() => [

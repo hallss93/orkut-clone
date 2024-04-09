@@ -3,5 +3,5 @@
 </template>
 
 <script lang="ts" setup>
-import LoginContainerComponent from "@/views/components/login/login-container.component.vue";
+import LoginContainerComponent from "@/views/components/organisms/login/login-container.component.vue";
 </script>

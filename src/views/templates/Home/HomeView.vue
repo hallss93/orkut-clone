@@ -12,5 +12,5 @@
 </template>
 
 <script setup lang="ts">
-import NavbarComponent from "@/views/components/navbar/navbar-container.component.vue";
+import NavbarComponent from "@/views/components/organisms/navbar/navbar-container.component.vue";
 </script>

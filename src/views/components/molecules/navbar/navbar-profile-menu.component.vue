@@ -9,7 +9,7 @@
           aria-expanded="true"
           aria-haspopup="true"
         >
-          <user-profile-photo-component />
+          <avatar-image-component rounded hight="h-10" width="w-10" />
           hallison melo
           <svg
             class="-mr-1 h-5 w-5 text-gray-400"
@@ -30,5 +30,5 @@
 </template>
 
 <script lang="ts" setup>
-import UserProfilePhotoComponent from "@/views/components/user-profile/user-profile-photo.component.vue";
+import AvatarImageComponent from "@/views/components/atoms/avatar-image.component.vue";
 </script>

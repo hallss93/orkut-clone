@@ -4,5 +4,5 @@
   </div>
 </template>
 <script lang="ts" setup>
-import UserClassifierItemComponent from "@/views/components/user-info/user-classifiers/user-classifier-item.component.vue";
+import UserClassifierItemComponent from "@/views/components/atoms/user-classifiers/user-classifier-item.component.vue";
 </script>
