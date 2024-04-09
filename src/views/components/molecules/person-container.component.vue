@@ -1,7 +1,9 @@
 <template>
   <div class="cursor-pointer" @click="open_item()">
     <avatar-image-component rounded />
-    <h6 class="text-sm font-normal text-gray-500">Olivia Joestar</h6>
+    <h6 class="text-sm font-normal text-gray-500 text-center">
+      Olivia Joestar
+    </h6>
   </div>
 </template>
 

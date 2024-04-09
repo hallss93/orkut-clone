@@ -7,6 +7,9 @@
       <div class="col-span-12">
         <community-info-container-component />
       </div>
+      <div class="col-span-12">
+        <forum-container-component />
+      </div>
     </template>
     <template #third>
       <card-container-component>
@@ -41,4 +44,5 @@ import CommunityProfileContainerComponent from "@/views/components/communities/c
 import CommunityInfoContainerComponent from "@/views/components/communities/community-info-container.component.vue";
 import CardContainerComponent from "@/views/components/organisms/card/card-container.component.vue";
 import PersonContainerComponent from "@/views/components/molecules/person-container.component.vue";
+import ForumContainerComponent from "@/views/components/organisms/forum/forum-container.component.vue";
 </script>
