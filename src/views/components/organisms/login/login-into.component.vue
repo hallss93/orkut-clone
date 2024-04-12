@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-12 md:col-span-8 lg:col-span-8 flex flex-wrap justify-center items-center bg-white md:me-2 p-4"
+    class="col-span-12 lg:col-span-8 lg:col-span-8 flex flex-wrap justify-center items-center bg-white lg:me-2 p-4"
   >
     <div class="flex flex-wrap justify-center h-fit">
       <img src="@/assets/logo.svg" alt="Orkut" class="h-20 mb-4" />

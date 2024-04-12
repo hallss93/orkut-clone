@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-12 md:col-span-4 lg:col-span-4 grid grid-cols-12 mt-2 md:mt-0"
+    class="col-span-12 lg:col-span-4 lg:col-span-4 grid grid-cols-12 mt-2 lg:mt-0"
   >
     <div class="col-span-12 bg-blue-100 p-4 mb-2 border border-2 border-white">
       <p class="text-gray-500 text-center mb-4">
