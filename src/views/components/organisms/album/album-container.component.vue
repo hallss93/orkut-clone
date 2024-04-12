@@ -1,29 +1,49 @@
 <template>
   <div class="p-6 bg-white border border-gray-200 rounded-large shadow">
     <breadcrumbs />
-    <p class="text-xl font-bold text-start my-4">Galeria (120)</p>
+    <p class="text-xl font-bold text-start my-4">Álbum teste (12)</p>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <div
-        v-for="(a, index) in albums"
-        :key="index"
-        class="mb-4 cursor-pointer hover:bg-gray-50 rounded-lg p-2"
-        @click="open_album(index)"
+    <div class="w-full">
+      <Carousel
+        id="gallery"
+        :items-to-show="1"
+        :wrap-around="false"
+        v-model="currentSlide"
+        class="mb-8"
       >
-        <img class="h-auto max-w-full rounded-lg" :src="a.src" alt="" />
-        <p class="text-xl font-medium text-slate-900">
-          {{ a.title }}
-        </p>
-        <p>
-          Use this example to show four larger images with two items on a row.
-        </p>
-      </div>
+        <Slide v-for="(a, index) in albums" :key="index">
+          <div class="carousel__item">
+            <img class="rounded-lg" :src="a.src" alt="" />
+          </div>
+        </Slide>
+      </Carousel>
+
+      <Carousel
+        id="thumbnails"
+        :items-to-show="4"
+        :wrap-around="true"
+        v-model="currentSlide"
+        ref="carousel"
+      >
+        <Slide v-for="(a, index) in albums" :key="index">
+          <div class="carousel__item" @click="slideTo(index)">
+            <img class="h-30 w-30 rounded-lg" :src="a.src" alt="" />
+          </div>
+        </Slide>
+      </Carousel>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+import "vue3-carousel/dist/carousel.css";
+import { ref } from "vue";
+import { Carousel, Slide } from "vue3-carousel";
+import { useRoute } from "vue-router";
 import router from "@/router";
+
 import Breadcrumbs from "@/views/components/atoms/breadcrumb/breadcrumb-container.component.vue";
+
+const route = useRoute();
 
 const albums = [
   {
@@ -76,7 +96,12 @@ const albums = [
   },
 ];
 
-function open_album(index: number) {
-  router.push("/gallery/" + index);
+const currentSlide = ref(0);
+
+function slideTo(val: number) {
+  currentSlide.value = val;
 }
+
+if (!route.params.id) router.push("/gallery/");
+currentSlide.value = Number(route.params.id);
 </script>
