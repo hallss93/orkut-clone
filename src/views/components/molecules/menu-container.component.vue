@@ -11,7 +11,7 @@
     <li
       v-for="(menu, index) in menu_items"
       :key="index"
-      class="w-full px-4 ps-12 py-4 flex items-center cursor-pointer"
+      class="w-full py-4 flex items-center cursor-pointer"
       :class="{ 'border-b border-gray-200': menu.spaced }"
       @click="router.push(menu.link ?? '/')"
     >
@@ -40,9 +40,9 @@ const menu_items = ref([
   { icon: faUserPlus, text: "Adicionar" },
   { icon: faBan, text: "Denunciar", spaced: true },
   { icon: faUser, text: "Perfil" },
-  { icon: faEnvelope, text: "Recados (3)" },
-  { icon: faImages, text: "Galeria (40)", link: "/gallery" },
-  { icon: faMessage, text: "Depoimentos (10)" },
-  { icon: faGamepad, text: "Aplicativos (2)" },
+  { icon: faEnvelope, text: "Recados (30.000)" },
+  { icon: faImages, text: "Galeria (40.000)", link: "/gallery" },
+  { icon: faMessage, text: "Depoimentos (900)" },
+  { icon: faGamepad, text: "Aplicativos (200)" },
 ]);
 </script>

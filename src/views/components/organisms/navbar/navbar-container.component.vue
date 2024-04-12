@@ -32,7 +32,7 @@
               >{{ m.name }}</a
             >
           </li>
-          <li>
+          <li class="hidden xl:block">
             <form class="max-w-md mx-auto">
               <label
                 for="default-search"
