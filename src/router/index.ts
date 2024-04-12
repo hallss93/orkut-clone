@@ -5,6 +5,9 @@ const routes: Array<RouteRecordRaw> = [
     path: "/home",
     redirect: "/profile",
     name: "home",
+    meta: {
+      breadcrumb: "Início",
+    },
     component: () =>
       import(
         /* webpackChunkName: "home" */ "../views/templates/Home/HomeView.vue"
@@ -13,6 +16,9 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/profile",
         name: "profile",
+        meta: {
+          breadcrumb: "Perfil",
+        },
         component: () =>
           import(
             /* webpackChunkName: "profile" */ "../views/pages/ProfileView.vue"
@@ -21,6 +27,9 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/community",
         name: "community",
+        meta: {
+          breadcrumb: "Comunidades",
+        },
         component: () =>
           import(
             /* webpackChunkName: "community" */ "../views/pages/CommunityView.vue"
@@ -29,9 +38,23 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/gallery",
         name: "gallery",
+        meta: {
+          breadcrumb: "Galeria",
+        },
         component: () =>
           import(
             /* webpackChunkName: "gallery" */ "../views/pages/GalleryView.vue"
+          ),
+      },
+      {
+        path: "/gallery/:id",
+        name: "album",
+        meta: {
+          breadcrumb: "Álbum",
+        },
+        component: () =>
+          import(
+            /* webpackChunkName: "gallery" */ "../views/pages/AlbumView.vue"
           ),
       },
     ],
