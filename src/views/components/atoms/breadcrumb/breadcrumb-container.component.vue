@@ -47,14 +47,10 @@ import { useRoute } from "vue-router";
 import { computed } from "vue";
 
 const route = useRoute();
-console.log(route);
 
 const breadcrumbs = computed(() => {
   const matchedRoutes = route.matched;
   const matchedLastRoute = route.matched[route.matched.length - 1];
-  console.log("route", route);
-  console.log("matchedRoutes", matchedRoutes);
-  console.log("matchedLastRoute", matchedLastRoute);
   matchedRoutes.splice(-1);
 
   return matchedRoutes

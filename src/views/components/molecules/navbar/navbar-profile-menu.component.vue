@@ -27,8 +27,8 @@
           >
             <div class="py-1 block lg:hidden">
               <MenuItem v-slot="{ active }">
-                <a
-                  href="#"
+                <router-link
+                  :to="{ path: '/profile' }"
                   :class="[
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm',
@@ -37,7 +37,7 @@
                   <FontAwesomeIcon
                     :icon="faUser"
                     class="me-4 text-gray-500 w-7"
-                  />Perfil</a
+                  />Perfil</router-link
                 >
               </MenuItem>
               <MenuItem v-slot="{ active }">
@@ -112,8 +112,8 @@
             </div>
             <div class="py-1 block lg:hidden">
               <MenuItem v-slot="{ active }">
-                <a
-                  href="#"
+                <router-link
+                  :to="{ path: '/gallery' }"
                   :class="[
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm',
@@ -121,7 +121,7 @@
                   ><FontAwesomeIcon
                     :icon="faImages"
                     class="me-4 text-gray-500 w-7"
-                  />Galeria</a
+                  />Galeria</router-link
                 >
               </MenuItem>
               <MenuItem v-slot="{ active }">
@@ -168,8 +168,8 @@
             </div>
             <div class="py-1">
               <MenuItem v-slot="{ active }">
-                <a
-                  href="#"
+                <router-link
+                  :to="{ path: '/' }"
                   :class="[
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm',
@@ -177,7 +177,7 @@
                   ><FontAwesomeIcon
                     :icon="faArrowRightFromBracket"
                     class="me-4 text-gray-500 w-7"
-                  />Sair</a
+                  />Sair</router-link
                 >
               </MenuItem>
             </div>
