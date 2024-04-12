@@ -15,8 +15,9 @@
         :key="index"
         class="inline-flex items-center"
       >
-        <div v-if="index === breadcrumbs.length - 1" class="flex items-center">
+        <div class="flex items-center">
           <svg
+            v-if="index > 0"
             class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
@@ -31,11 +32,16 @@
               d="m1 9 4-4-4-4"
             />
           </svg>
-          <a href="#" class="ms-1 text-sm font-bold text-pink-500"
+          <a
+            v-if="index === breadcrumbs.length - 1"
+            href="#"
+            class="ms-1 text-sm font-bold text-pink-500"
             ><router-link :to="crumb.to">{{ crumb.label }}</router-link></a
           >
         </div>
-        <router-link v-else :to="crumb.to">{{ crumb.label }}</router-link>
+        <router-link v-if="index < breadcrumbs.length - 1" :to="crumb.to">{{
+          crumb.label
+        }}</router-link>
       </li>
     </ol>
   </nav>

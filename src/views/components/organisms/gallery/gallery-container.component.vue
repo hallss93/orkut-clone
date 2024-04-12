@@ -11,7 +11,7 @@
         @click="open_album(index)"
       >
         <img class="h-auto max-w-full rounded-lg" :src="a.src" alt="" />
-        <p class="text-xl font-medium text-slate-900">
+        <p class="text-xl font-medium text-slate-900 my-2">
           {{ a.title }}
         </p>
         <p>
